@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- I've been told that well written code should be semantic and efficient
-therefore comments are rare and only for particularly complex or unusual situations, 
-section seperation, note taking, or psuedo-code during development. -->
+<!-- This website looks super dated and tacky. It doesn't look like what I was imagining in my head and I will definitley be redoing it! -->
 <html>
   <head>
     <meta charset="utf-8">
@@ -26,7 +24,8 @@ section seperation, note taking, or psuedo-code during development. -->
           and if the image isn't working the page will still look decent.  -->
           
           <nav>
-            <ul class= "page_links"> <!-- I have considered using a <map> to combine the text and dashes instead of two <ul>s -->
+            <ul class= "page_links"> <!-- I have considered using a <map> to combine the text and dashes instead of two <ul>s
+                in any case, in the next version I'll make them & the logo switch to yellow on hover -->
                 <li><a href="code.html">CODE</a></li>
                 <li><a href="audio.html">AUDIO</a></li>     
             </ul>
@@ -68,110 +67,128 @@ section seperation, note taking, or psuedo-code during development. -->
           <!-- The terminology used to describe articles/sections suggest using this semantic format. 
           Though I'm not sure they should be articles since these parts are not particularly independent. -->
         <article id="greeting">
-            <p class="wrapper">
-                <span style="font-size:28px;">LET'S MAKE SOMETHING TOGETHER!</span><br>
-                <span style="font-size:16px;">Hi! I'm George, a software developer in the Hartford, CT area with a background in music and audio.
-                I'm always in search of ways to make things more usable, adaptable, and efficient.
-                The thing that drives me is finding where beauty meets structure. </span>
-            </p>
+            <div class="area a">
+                <p class="wrapper">
+                    <span style="font-size:28px;"><strong>LET'S MAKE SOMETHING TOGETHER!</span><br>
+                    <span style="font-size:16px;">Hi! I'm George, a software developer in the Hartford, CT area with a background in music and audio.
+                    I'm always in search of ways to make things more usable, adaptable, and efficient.
+                    The thing that drives me is finding where beauty meets structure. </span>
+                </p>
+            </div>
         </article>
 
         <article id="about_me">
             <h2>ABOUT ME</h2>
-            <div class="wrapper">
-                <img class="me" src="images/me.jpg" width="140" alt="a photo of George"/>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse deserunt? Illum non, placeat praesentium odit tempore dignissimos culpa amet atque est laboriosam rerum aperiam ut quaerat obcaecati cum porro.</p>
+            <div class="area b">
+                <div class="wrapper bio">
+                    <img class="me" src="images/me.jpg" width="140" alt="a photo of George"/>
+                    <p>My whole life I have been fascinated by the merging of art and technology. At first I was more heavily focuses on the arts.
+                         I went to college at the Hartt School for music composition and jazz piano. In my studies I discovered things like generative music, 
+                         projection mapping, FFT effects, and a graphical programming language called Max MSP. The more I explored projects in Max, the more I came to 
+                        understand coding in general, how ubiquitous and freeing it is! Several of my projects thus far have been related to to music.</p>
+                    <p>As I continued I became more interested in computers in general and became involved in projects like building and fixing computers and creating a UDP based application for sending music notation between devices for structured improvisation.
+                        I began studying IT concepts for the CompTIA A+ certification and passed the first portion in August. After that I took a basic Javascript course on Udemy and have since created a couple of web apps.</p>
+                </div>
             </div>
         </article>
 
         <article id="services">
             <h2>SERVICES</h2>
-            <div class="wrapper">
-                <section class="side">
-                    <h3>CODE</h3>
-                    <p>As a fullstack developer I am a versatile teammate and I love to work in groups of any size. 
-                        I offer freelance services for one-off projects or when you like to keep your team small.</p>
-                    <ui>
-                        <li>website building</li>
-                        <li>web app development</li>
-                        <li>database services</li>
-                        <li>server management</li>
-                        <li>generative and stochastic systems</li>
-                        <li>digital signal processing</li>
-                        <li>machine learning and neural nets</li>
-                    </ui>
-                    <a href="code.html">Visit the CODE page for more comprehensive information.</a>
-                </section>
-                <section class="side">
-                    <h3>AUDIO</h3>
-                    <p>In my small music studio I am always creating. I've done everything from pop songs and trap beats to esoteric classical works.                        
-                        If you need music or audio created, notated, or improved I can help. </p>
-                    <ui>
-                        <li>original music</li>
-                        <li>arrangements</li>
-                        <li>transcription</li>
-                        <li>professional performance and recordings:
-                            <br> keyboards, guitar, electronics, and vocals</li>
-                        <li>mixing</li>
-                        <li>sound effects</li>
-                        <li>lessons</li>
-                    </ui>
-                    <a href="audio.html">Visit the AUDIO page for more comprehensive information.</a>
-                </section>
+            <div class="area c">
+                <div class="wrapper columns">
+                    <section class="side">
+                        <h3>CODE</h3>
+                        <p>As a fullstack developer I am a versatile teammate and I love to work in groups of any size. 
+                            I offer freelance services for one-off projects or when you like to keep your team small.</p>
+                        <ui>
+                            <li>website building</li>
+                            <li>web app development</li>
+                            <li>database services</li>
+                            <li>server management</li>
+                            <li>stochastic systems</li>
+                            <li>digital signal processing</li>
+                            <li>machine learning / neural nets</li>
+                        </ui>
+                        <a class="bottom" href="code.html">Visit the CODE page for more comprehensive information.</a>
+                    </section>
+                    <section class="side">
+                        <h3>AUDIO</h3>
+                        <p>In my small music studio I am constantly creating. I've done everything from pop songs and trap beats to full classical works.                        
+                            If you need music or audio created, notated, or improved I can help. </p>
+                        <ui>
+                            <li>original music</li>
+                            <li>arrangements</li>
+                            <li>transcription</li>
+                            <li>mixing</li>
+                            <li>sound effects</li>
+                            <li>lessons</li>
+                            <li>professional recordings: <br>keys, guitar, electronics, and vocals</li>
+                        </ui>
+                        <a class="bottom" href="audio.html">Visit the AUDIO page for more comprehensive information.</a>
+                    </section>
+                </div>
             </div>
         </article>
         
         <article id="experiences">
             <h2>EXPERIENCES</h2>
-            <div class="wrapper">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse deserunt? Illum non, placeat praesentium odit tempore dignissimos culpa amet atque est laboriosam rerum aperiam ut quaerat obcaecati cum porro.</p>
+            <div class="area d">
+                <div class="wrapper">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, esse deserunt? Illum non, placeat praesentium odit tempore dignissimos culpa amet atque est laboriosam rerum aperiam ut quaerat obcaecati cum porro.</p>
+                </div>
             </div>
         </article>
 
         <article id="current_projects">
             <h2>CURRENT PROJECTS</h2>
-            <div class="wrapper">
-                <ul>
-                    <li><a href="https://rhythmodulum.netlify.app/">rhythmodulum</a></li>
-                    <p>A web app for generating and manipulating rhyhtmic patterns. Soon: MIDI Clock/Transport control, MIDI IN/OUT, and custom sample kits.</p>
-                    <li><a href="https://github.com/GeorgeLuther/choralator">choralator</a></li>
-                    <p>A web app that generates music with up to four voices by concatenating randomly generated motifs into larger musical forms. Currently available as an Ableton Live 'M4L' device.</p>
-                    <li><a href="https://www.youtube.com/watch?v=EWrygtUhy7U&t=0m4s">racquetSong</a></li>
-                    <p>A virtual space in Unity for improvising music through controlled randomness and the physicality of raquetball. Made in collaboration with Sean Nealon.</p>
-                </ul>
+            <div class="area e">
+                <div class="wrapper">
+                    <ul>
+                        <li><a href="https://rhythmodulum.netlify.app/">rhythmodulum</a></li>
+                        <p>A web app for generating and manipulating rhyhtmic patterns. Soon: MIDI Clock/Transport control, MIDI IN/OUT, and custom sample kits.</p>
+                        <li><a href="https://github.com/GeorgeLuther/choralator">choralator</a></li>
+                        <p>A web app that generates music with up to four voices by concatenating randomly generated motifs into larger musical forms. Currently available as an Ableton Live 'M4L' device.</p>
+                        <li><a href="https://www.youtube.com/watch?v=EWrygtUhy7U&t=0m4s">racquetSong</a></li>
+                        <p>A virtual space in Unity for improvising music through controlled randomness and the physicality of raquetball. Made in collaboration with Sean Nealon.</p>
+                    </ul>
+                </div>
             </div>
         </article>
 
         <article id="contact_form">
             <h2>CONTACT ME</h2>
-            <div class="wrapper">
-                <form class="contact_form">
-                    <div class="row">
-                        <div>
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
-                                <p class="help-block text-danger"></p>
+            <div class="area f">
+                <div class="wrapper">
+                    <form class="contact_form">
+                        <div class="row">
+                            <div>
+                                <div class="form-group">
+                                    <input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class=>
+                                <div class="form-group">
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="required">
+                                </div>
                             </div>
                         </div>
-                        <div class=>
-                            <div class="form-group">
-                                <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="required">
-                            </div>
+                        <div class="form-group">
+                            <textarea name="message" name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-                    </div>
-                    <div id="success"></div>
-                    <button type="submit" class="btn btn-custom btn-lg">Send</button>
-                </form>
+                        <div id="success"></div>
+                        <button type="submit" class="btn btn-custom btn-lg">Send</button>
+                    </form>
+                </div>
             </div>
         </article>
 
         <article id="map">
-            <div class="wrapper">
-                <p>I live in the Hartford, CT area. While I love long drives, I love working remotely even more so. In these modern times, remote solutions expand your network and allow us to access amazing resources and ideas! Don't let our locations deter you from contacting me!</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53910.30157660887!2d-72.71799554988837!3d41.765974686852516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e65311f21151a5%3A0xcc8e4aa8e97d5999!2sHartford%2C%20CT!5e0!3m2!1sen!2sus!4v1602200949754!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="area g">
+                <div class="wrapper">
+                    <p>I live in the Hartford, CT area. While I love long drives, I love working remotely even more so. In these modern times, remote solutions expand your network and allow us to access amazing resources and ideas! Don't let our locations deter you from contacting me!</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53910.30157660887!2d-72.71799554988837!3d41.765974686852516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e65311f21151a5%3A0xcc8e4aa8e97d5999!2sHartford%2C%20CT!5e0!3m2!1sen!2sus!4v1602200949754!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
         </article>
       </main>

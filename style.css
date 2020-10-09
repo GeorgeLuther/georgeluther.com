@@ -52,10 +52,9 @@ nav a, main a {
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
-    padding-left: 16px;
+    width: 150px;
 }
 .page_links a {
-  margin-left: 16px;
   font-size: 20px;
   margin-bottom: 0;
 }
@@ -71,14 +70,11 @@ nav a, main a {
   justify-content: space-between;
 }
 .page_dashes {
-  margin: 0;
-  padding: 0 20px 0 0;
+  position: relative;
+  top: -7px;
+  right: 18px;
 }
-.social_links {
-  width: 150px;
-  padding: 0;
-  margin: 0;
-}
+
 .dropbtn {
     border: none;
     outline: none;
@@ -95,8 +91,8 @@ nav a, main a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-top: 20px;
-    margin-right: 30px;
     padding-top: 10px;
+    right: 13px;
   }
   .dropdown-content a {
     float: none;
@@ -105,6 +101,7 @@ nav a, main a {
     text-decoration: none;
     display: block;
     text-align: center;
+    font-size: 14px;
   }
   .dropdown-content a:hover {
     background-color: rgb(224, 159, 55);;
@@ -120,23 +117,77 @@ nav a, main a {
   margin-top: 100px;
   margin-left: 8px;
   list-style-type: none;
+  text-shadow: 2px 2px 5px black;
 }
 #greeting {
   padding-top: 110px;
 }
 .me {
   float: left;
+  border-radius: 5px;
 }
 h2 {
   text-align: center;
+  margin: 20px 0 10px 0;
+  text-shadow: 2px 2px 5px black;
+}
+.area {
+  width: 100%;
+  background-color: blanchedalmond;
+  box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
+  padding: 10px 0 10px 0;
+  margin: 0;
 }
 .wrapper {
   width: 600px;
   margin: auto;
-}
-#about_me {
-  height: 230px;
-}
-.services .wrapper {
-  flex-direction: row;
-}
+  padding: 20px;
+  overflow: visible;
+  border-radius: 5px;
+  box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
+  }
+  .wrapper p {
+    margin: 10px;
+  }
+  .a {
+    background-image: url(images/moss-rock.jpg);
+    background-size: 100%;
+    color: white;
+  }
+  .a .wrapper {
+    color: rgb(58, 70, 58);
+    background-color: rgba(221, 251, 255, 0.7);
+  }
+  .b {
+    background-image: url(images/harris-tweed-cold.jpg);
+    background-size: 50%;
+  }
+  .b .wrapper {
+    color: rgb(34, 22, 22);
+    background-color: rgba(219, 174, 255, 0.8);
+  }  
+  .c {
+    background-image: url(images/burlap.jpg);
+    background-size: 100%;
+  }
+  .c .wrapper {
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 234, 225, 0.8);
+  }  
+  .columns {
+    display: flex;
+  }
+  .side {
+    flex: 50%;
+    padding: 10px;
+    padding-bottom: 60px;
+    position: relative;
+  }
+  .side h3 {
+    text-align: center;
+  }
+  .side a {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
