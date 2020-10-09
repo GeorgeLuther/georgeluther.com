@@ -1,12 +1,128 @@
 html {
 	scroll-behavior: smooth;
 }
-
 @media screen and (prefers-reduced-motion: reduce) {
 	html {
 		scroll-behavior: auto;
 	}
 }
 * {
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat';
+    text-decoration: none;
+}
+
+body {
+    background-image: url("images/lavender.jpg");
+    background-size: cover;
+    background-color: black;
+    background-attachment: fixed;
+}
+header {
+    background-color: rgb(182, 142, 126);
+    background-image: url("images/dashboard.jpg");
+    background-size: 100%;
+    position: fixed;
+    width: 100%;
+    box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
+}
+h1 {
+    display: none;
+}
+.logo {
+    clear: both;
+    z-index: -1;
+    float: left;
+    margin: 6px;
+}
+nav {
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 16px;
+}
+nav a, main a {
+    text-decoration: none;
+    color: black;
+}
+.page_links, .page_dashes, .social_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 16px;
+}
+.page_links a {
+  margin-left: 16px;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.page_dashes a {
+  margin-left: 16px;
+  font-size: 20px;
+}
+.page_dashes {
+  margin: 0 0 0 0;
+  padding: 0 30px 0 0;
+}
+.page_links, .page_dashes, .dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding-left: 16px;
+    padding-top: 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  nav a:hover, main a:hover, .dropdown:hover .dropbtn {
+    color: rgb(224, 159, 55);
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a37c5c;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 4px;
+    padding-top: 10px;
+  }
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  .dropdown-content a:hover {
+    background-color: rgb(224, 159, 55);;
+    color: black;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+#anchor_links {
+  float: left;
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 8px;
+  list-style-type: none;
+}
+
+#greeting {
+  padding-top: 110px;
 }
