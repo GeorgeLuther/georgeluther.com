@@ -34,7 +34,7 @@ h1 {
     clear: both;
     z-index: -1;
     float: left;
-    margin: 6px;
+    margin: 8px;
 }
 nav {
     margin: 10px;
@@ -59,33 +59,31 @@ nav a, main a {
   font-size: 20px;
   margin-bottom: 0;
 }
-.page_dashes a {
+.page_dashes a, .page_dashes li {
   margin-left: 16px;
   font-size: 20px;
+  margin-top: 0;
+  padding-top: 0;
 }
-.page_dashes {
-  margin: 0 0 0 0;
-  padding: 0 30px 0 0;
-}
-.page_links, .page_dashes, .dropdown {
+.page_links, .page_dashes, .social_links, .dropdown {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.dropdown {
-    float: left;
-    overflow: hidden;
-  }
-  .dropdown .dropbtn {
-    font-size: 16px;
+.page_dashes {
+  margin: 0;
+  padding: 0 20px 0 0;
+}
+.social_links {
+  width: 150px;
+  padding: 0;
+  margin: 0;
+}
+.dropbtn {
     border: none;
     outline: none;
     color: black;
-    padding-left: 16px;
-    padding-top: 14px;
     background-color: inherit;
-    font-family: inherit;
-    margin: 0;
   }
   nav a:hover, main a:hover, .dropdown:hover .dropbtn {
     color: rgb(224, 159, 55);
@@ -96,7 +94,8 @@ nav a, main a {
     background-color: #a37c5c;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    margin-left: 4px;
+    margin-top: 20px;
+    margin-right: 30px;
     padding-top: 10px;
   }
   .dropdown-content a {
@@ -122,7 +121,22 @@ nav a, main a {
   margin-left: 8px;
   list-style-type: none;
 }
-
 #greeting {
   padding-top: 110px;
+}
+.me {
+  float: left;
+}
+h2 {
+  text-align: center;
+}
+.wrapper {
+  width: 600px;
+  margin: auto;
+}
+#about_me {
+  height: 230px;
+}
+.services .wrapper {
+  flex-direction: row;
 }
