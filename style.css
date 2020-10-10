@@ -19,6 +19,7 @@ body {
     background-color: black;
     background-attachment: fixed;
 }
+/* header area~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 header {
     background-color: rgb(182, 142, 126);
     background-image: url("images/dashboard.jpg");
@@ -26,6 +27,7 @@ header {
     position: fixed;
     width: 100%;
     box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 h1 {
     display: none;
@@ -110,7 +112,7 @@ nav a, main a {
   .dropdown:hover .dropdown-content {
     display: block;
   }
-
+/* main area~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #anchor_links {
   float: left;
   position: fixed;
@@ -125,6 +127,7 @@ nav a, main a {
 .me {
   float: left;
   border-radius: 5px;
+  margin: 16px;
 }
 h2 {
   text-align: center;
@@ -149,6 +152,7 @@ h2 {
   .wrapper p {
     margin: 10px;
   }
+  /* individual sections~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
   .a {
     background-image: url(images/moss-rock.jpg);
     background-size: 100%;
@@ -182,6 +186,7 @@ h2 {
     padding: 10px;
     padding-bottom: 60px;
     position: relative;
+    z-index: 0;
   }
   .side h3 {
     text-align: center;
@@ -190,4 +195,63 @@ h2 {
       position: absolute;
       bottom: 0;
       right: 0;
+  }
+  .d {
+    background-image: url(images/slate.jpg);
+    background-size: 100%;
+  }
+  .d .wrapper {
+    color: rgb(0, 0, 0);
+    background-color: rgba(220, 219, 255, 0.6);
+  }  
+  .e {
+    background-image: url(images/herringbone-tweed.jpg);
+    background-size: 100%;
+  }
+  .e .wrapper {
+    color: rgb(214, 214, 214);
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .e a {
+    color: rgb(214, 214, 214);
+  }
+  .f {
+    background-image: url(images/harris-tweed-purple.jpg);
+    background-size: 50%;
+  }
+  .f .wrapper {
+    color: rgb(0, 0, 0);
+    background-color: rgba(220, 219, 255, 0.9);
+  }
+  .f input, .f textarea, .f button {
+    border-radius: 5px;
+    border: none;
+  }
+  textarea {
+    display: block;
+    margin: auto;
+    width: 550px;
+    margin-top: 16px;
+  }
+
+  .f button {
+    padding: 10px;
+    color: white;
+    background-color: rgb(85, 42, 85);
+  }
+  .g {
+    background-image: url(images/bark.jpg);
+    background-size: 100%;
+  }
+  .g .wrapper {
+    color: rgb(255, 255, 255);
+    background-color: rgba(110, 76, 43, 0.9);
+  }
+  iframe {
+    border-radius: 5px;
+  }
+  /* footer area~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+  footer {
+    text-align: center;
+    font-size: 10px;
   }
