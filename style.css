@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background-image: url("images/lavender.jpg");
+    background-image: url("images/leaves.jpg");
     background-size: cover;
     background-color: black;
     background-attachment: fixed;
@@ -122,6 +122,9 @@ nav a, main a {
   list-style-type: none;
   text-shadow: 2px 2px 5px black;
 }
+#anchor_links a {
+  color: rgb(219, 182, 166);
+}
 #greeting {
   padding-top: 110px;
 }
@@ -134,119 +137,27 @@ h2 {
   text-align: center;
   margin: 20px 0 10px 0;
   text-shadow: 2px 2px 5px black;
+  color: white;
 }
 .area {
   width: 100%;
-  background-color: blanchedalmond;
+  background-color: rgb(15, 15, 15);
   box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
   padding: 10px 0 10px 0;
   margin: 0;
 }
 .wrapper {
+  background-color: rgb(24, 24, 24);
   width: 600px;
   margin: auto;
   padding: 20px;
   overflow: visible;
   border-radius: 5px;
   box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
+  color: white;
   }
   .wrapper p {
     margin: 10px;
-  }
-  /* individual sections~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-  .a {
-    background-image: url(images/moss-rock.jpg);
-    background-size: 100%;
-    color: white;
-  }
-  .a .wrapper {
-    color: rgb(58, 70, 58);
-    background-color: rgba(221, 251, 255, 0.7);
-  }
-  .b {
-    background-image: url(images/harris-tweed-cold.jpg);
-    background-size: 50%;
-  }
-  .b .wrapper {
-    color: rgb(34, 22, 22);
-    background-color: rgba(219, 174, 255, 0.8);
-  }  
-  .c {
-    background-image: url(images/burlap.jpg);
-    background-size: 100%;
-  }
-  .c .wrapper {
-    color: rgb(0, 0, 0);
-    background-color: rgba(255, 234, 225, 0.8);
-  }  
-  .columns {
-    display: flex;
-  }
-  .side {
-    flex: 50%;
-    padding: 10px;
-    padding-bottom: 60px;
-    position: relative;
-    z-index: 0;
-  }
-  .side h3 {
-    text-align: center;
-  }
-  .side a {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-  }
-  .d {
-    background-image: url(images/slate.jpg);
-    background-size: 100%;
-  }
-  .d .wrapper {
-    color: rgb(0, 0, 0);
-    background-color: rgba(220, 219, 255, 0.6);
-  }  
-  .e {
-    background-image: url(images/herringbone-tweed.jpg);
-    background-size: 100%;
-  }
-  .e .wrapper {
-    color: rgb(214, 214, 214);
-    background-color: rgba(0, 0, 0, 0.9);
-  }
-  .e a {
-    color: rgb(214, 214, 214);
-  }
-  .f {
-    background-image: url(images/harris-tweed-purple.jpg);
-    background-size: 50%;
-  }
-  .f .wrapper {
-    color: rgb(0, 0, 0);
-    background-color: rgba(220, 219, 255, 0.9);
-  }
-  .f input, .f textarea, .f button {
-    border-radius: 5px;
-    border: none;
-  }
-  textarea {
-    display: block;
-    margin: auto;
-    width: 550px;
-    margin-top: 16px;
-  }
-
-  .f button {
-    padding: 10px;
-    color: white;
-    background-color: rgb(85, 42, 85);
-  }
-  .g {
-    background-image: url(images/bark.jpg);
-    background-size: 100%;
-  }
-  .g .wrapper {
-    color: rgb(255, 255, 255);
-    background-color: rgba(110, 76, 43, 0.9);
   }
   iframe {
     border-radius: 5px;
