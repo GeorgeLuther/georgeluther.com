@@ -10,12 +10,12 @@ html {
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
 }
 
 body {
-    background-image: url("images/leaves.jpg");
+    /* background-image: url("images/pattern.jpg"); */
     background-size: cover;
     background-color: black;
     background-attachment: fixed;
@@ -90,7 +90,7 @@ nav a, main a {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #a37c5c;
+    background-color: #8a6e5a;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     margin-top: 20px;
@@ -123,7 +123,7 @@ nav a, main a {
   text-shadow: 2px 2px 5px black;
 }
 #anchor_links a {
-  color: rgb(219, 182, 166);
+  color: #94684B;
 }
 #greeting {
   padding-top: 110px;
@@ -148,22 +148,210 @@ h2 {
 }
 .wrapper {
   background-color: rgb(24, 24, 24);
-  width: 600px;
+  width: 470px;
   margin: auto;
   padding: 20px;
   overflow: visible;
-  border-radius: 5px;
   box-shadow: 8px 8px 20px 8px rgba(0,0,0,0.2);
   color: white;
   }
   .wrapper p {
     margin: 10px;
   }
-  iframe {
-    border-radius: 5px;
-  }
-  /* footer area~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-  footer {
-    text-align: center;
-    font-size: 10px;
-  }
+/* individual wrappers~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* INTRO */
+.wrapper.a h3 {
+  color: #F6E5A1;
+}
+.wrapper.a {
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  padding: 25px;
+  border-image: url(images/paisley/paisley-green-black-1.jpg) 30 round;
+  background-color:#364948;
+  color: #F6E5A1;
+}
+/* ABOUT ME */
+h2.b {
+  color: #c36b38;
+}
+.wrapper.b {
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  padding: 25px;
+  border-image: url(images/paisley/paisley-red-tan.jpg) 30 round;
+  background-color: #c2a583;
+  color: #2B0000;
+}
+/* SERVICES */
+h2.c {
+  color: #2790a3;
+}
+.side h3 {
+  color: #740806;
+  text-align: center;
+}
+.side {
+  margin: 16px;
+}
+.wrapper.c {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 450px;
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  padding: 20px;
+  border-image: url(images/paisley/paisley-blue-red.jpg) 30 round;
+  background-color: #cebb9d;
+  color: #2e2a25;
+}
+.wrapper ul {
+  padding-left: 16px;
+}
+.wrapper.c a {
+  color: #24211d;
+}
+.wrapper.c a:hover {
+  color: #247583;
+}
+.bottom {
+  position: absolute;
+  bottom: 10px;
+}
+/* EXPERIENCES */
+h2.d {
+  color: #d88c6e;
+}
+.wrapper.d {
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  padding: 25px;
+  border-image: url(images/paisley/paisley-green-pink.jpg) 30 round;
+  background-color: #e0e0da;
+  color: black;
+}
+/* PROJECTS */
+h2.e {
+  color: #11c78d;
+}
+.wrapper.e {
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  padding: 25px;
+  border-image: url(images/paisley/paisley-purple-tan.jpg) 30 round;
+  background-color: #c2ab88;
+  color: #260032;
+}
+.wrapper.e a {
+  color: #7D1960;
+  font-weight: bolder;
+}
+/* CONTACT ME */
+h2.f {
+  color: #db8b63;
+}
+.wrapper.f {
+  border-top: 10px solid;
+  border-bottom: 10px solid;
+  padding: 25px;
+  border-image: url(images/paisley/paisley-blue-orange.png) 30 round;
+  background-color: #f5ecee;
+}
+.links, .contact_info {
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  color: #5F798C;
+}
+.links a, .contact_info a {
+  color: #5F798C;
+}
+.links a:hover, .contact_info a:hover {
+  color: #db8b63;
+}
+.wrapper.f hr {
+  background-color: #5F798C;
+  margin: 16px;
+  height: 1px;
+  border: none;
+}
+.wrapper.f h3 {
+  color: #5F798C;
+}
+.mid {
+  display: flex;
+  justify-content: space-between;
+}
+.mid input {
+  color: #2c1d25;
+  background-color: #f5ecee;
+  border: none;
+  border-bottom: 1.25px solid #5F798C;
+  padding: 4px;
+  margin: 8px 0;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  position: relative;
+}
+.message textarea {
+  border: 1.25px solid #5F798C;
+  background-color: #f5ecee;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.send {
+  position: absolute;
+  width: 60px;
+  right: 0;
+  bottom: 0;
+  border-radius: 3px;
+  border: none;
+  background-color: #5F798C;
+  color: #f5ecee;
+  padding: 2px 10px;
+}
+textarea:hover {
+  border: 1.25px solid #db8b63;
+}
+.send:hover {
+  position: absolute;
+  width: 60px;
+  right: 0;
+  bottom: 0;
+  border-radius: 3px;
+  border: none;
+  background-color: #db8b63;
+  color: #f5ecee;
+  padding: 2px 10px;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #5F798C;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #5F798C;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #5F798C;
+}
+
+/* MAP ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/* in the future, will stylize with the google maps JS API for a dark mode vibe */
+iframe {
+  border: none;
+  width: 100%;
+}
+/* footer area~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+footer {
+  text-align: center;
+  font-size: 10px;
+  color: goldenrod;
+}
